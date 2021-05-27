@@ -1,3 +1,6 @@
+//A naive solution of maintaining 3 for loops for every element will work but it gives O(n^3) time complexity.
+//Don't confuse two pointer with binary search
+//This question can be solved in O(n^2) time using 2 pointer technique but the element needs to be sorted.
 //This can be solved using 2 pointer approach, one element can be fixed at every iteration and then rest of the array can be searched for the remaining pair, 2 pointers are 
 //fixed for 2 elements and then everytime we get a lesser difference, our difference is updated. If A[low]+A[high] is greater than target, we decrease high to reduce our sum
 //and if it is lesser, then we increase low pointer to increase our sum.
